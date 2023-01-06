@@ -1,0 +1,168 @@
+* {
+  font-family: Helvetica, "Open Sans", sans-serif;
+  font-size: large;
+  color: #fff;
+}
+
+body {
+  background-color: #1d1d1d;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px;
+  margin: 0;
+  border: none;
+}
+
+#side-menu {
+  display: flex;
+  flex-basis: 10%;
+  background-color: #28282b;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 960px;
+}
+
+.side-item {
+  flex: 25%;
+  padding: 0px 0px 0px 0px;
+}
+
+#profile-pic img {
+  width: 100%;
+}
+
+#sections-container {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 75%;
+  background-color: #1d1d1d;
+}
+
+#sections-inner-container {
+  display: flex;
+  flex-basis: 50%;
+  padding: 5px 20px;
+}
+
+p {
+  margin: 0;
+  padding: 3px 0px;
+  border: 0;
+}
+
+nav {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: left;
+  align-items: center;
+  padding: 0px;
+  text-align: justify;
+}
+
+nav ul li {
+  text-align: center;
+
+  list-style: none;
+  margin: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+nav ul li a:hover {
+  color: hotpink;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+#icons {
+  margin: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.fa-linkedin {
+  background: black;
+  color: #909096;
+  padding: 4px;
+  margin: 4px 15px;
+}
+
+.fa-github {
+  background: black;
+  color: #909096;
+  padding: 4px;
+}
+
+.sections.displayed {
+  display: block;
+}
+
+.sections {
+  display: none;
+}
+
+h1 {
+  font-size: 80px;
+  font-weight: 600;
+  padding: 0px;
+  margin: 0px;
+}
+
+#skills-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul {
+  list-style-type: square;
+}
+
+ul li {
+  margin: 10px 0px;
+}
+
+.list-headings li {
+  font-weight: 500;
+  color: #e83e8c;
+}
+
+.dates {
+  margin: 0 0 3px 0;
+  font-style: italic;
+}
+
+button {
+  background-color: #181818;
+  color: #e83e8c;
+  border: 2px solid #e83e8c;
+  cursor: pointer;
+  padding: 20px;
+  width: 180px;
+  border-radius: 4px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 5px;
+}
+
+button a {
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}

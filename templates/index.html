@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename= 'css/style.css') }}"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Shamiso Chikowore</title>
+  </head>
+  <body>
+    <!-- Left side menu -->
+    <div id="side-menu">
+      <!-- Profile picture -->
+      <div id="profile-pic" class="side-item">
+        <img src="{{url_for('static',filename = 'images/pic.jpeg')}}" />
+      </div>
+
+      <!-- navigation -->
+      <div id="navigation" class="side-item">
+        <nav>
+          <ul>
+            <hr />
+            <li class="menu-links" onclick="showContent('home')">
+              <a href="#">Home</a>
+            </li>
+            <hr />
+            <li class="menu-links" onclick="showContent('about')">
+              <a href="#">About me</a>
+            </li>
+            <hr />
+            <li class="menu-links" onclick="showContent('skills')">
+              <a href="#">My skills</a>
+            </li>
+            <hr />
+            <li class="menu-links" onclick="showContent('education')">
+              <a href="#">Education</a>
+            </li>
+            <hr />
+            <li class="menu-links" onclick="showContent('projects')">
+              <a href="#">Projects</a>
+            </li>
+            <hr />
+            <li class="menu-links" onclick="showContent('work')">
+              <a href="#">Work</a>
+            </li>
+            <hr />
+            <li class="menu-links" onclick="showContent('contact')">
+              <a href="#">Contact</a>
+            </li>
+            <hr />
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Github and LinkedIn -->
+      <div id="socials" class="side-item">
+        <div id="icons">
+          <a
+            class="fa fa-linkedin"
+            href="https://www.linkedin.com/in/shamiso-chikowore/"
+            target="_blank"
+          ></a>
+
+          <a
+            class="fa fa-github"
+            href="https://github.com/ShamieC"
+            target="_blank"
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right side main container -->
+    <div id="sections-container">
+      <div id="sections-inner-container">
+        <!-- HOME -->
+        <div class="sections displayed" id="home">
+          <h1 class="titles">
+            Hello, <br />
+            I am Shamiso.
+          </h1>
+          <p>
+            I am a computer science graduate looking to start a career in
+            software development in a demanding high-performance work
+            environment.
+          </p>
+        </div>
+
+        <!-- ABOUT SECTION -->
+        <div class="sections" id="about">
+          <h1 class="titles">Who am 1?</h1>
+          <p>
+            My name is Shamiso Chikowore. I am a responsible and hardworking
+            individual who enjoys solving practical problems using technology.
+          </p>
+          <br />
+          <p>
+            I am an avid reader. I enjoy listening to podcasts about business,
+            tech and human behaviour. I also enjoy hiking and trying out
+            different sports activities.
+          </p>
+          <br />
+          <p>
+            Having completed my studies recently, I am committed to fully apply
+            myself to learning and developing my career in software development.
+          </p>
+        </div>
+
+        <!-- SKILLS SECTION -->
+        <div class="sections" id="skills">
+          <h1 class="titles">My skillset</h1>
+          <p>Here are a few technologies I have worked with:</p>
+
+          <div id="skills-list">
+            <div id="leftlist">
+              <ul>
+                <li>Java</li>
+                <li>Python</li>
+                <li>C</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
+
+            <div id="rightlist">
+              <ul>
+                <li>Haskell</li>
+                <li>SQL</li>
+                <li>MySQL</li>
+                <li>Postgress</li>
+                <li>Flask</li>
+                <li>Django</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- EDUCATION SECTION -->
+        <div class="sections" id="education">
+          <h1>Education</h1>
+          <ul class="list-headings">
+            <li>Bachelor of Science (BSc) Honours, Computer Science</li>
+            Stellenbosch University/Universiteit Stellenbosch, Jan 2022 – Dec
+            2022
+            <li>Bachelor of Science (BSc), Computer Science</li>
+            Stellenbosch University/Universiteit Stellenbosch, Feb 2018 – Dec
+            2021
+            <li>Cambridge AS Level (Mathematics, Physics and Chemistry)</li>
+            International School of Cape Town, Jan 2017 – Dec 2017
+          </ul>
+        </div>
+
+        <!-- PROJECTS SECTION -->
+        <div class="sections" id="projects">
+          <h1>Projects</h1>
+          <p>Here are a few projects I have worked on:</p>
+          <ul class="list-headings">
+            <li>A secure file-sharing</li>
+            A secure file sharing program implemented using a client-server
+            model. Users connect to a server and can search for files on other
+            users' computers and request to download the files. The program is
+            in Java.
+            <li>GitHub Repositories Web Scraper</li>
+            Developed using the Python Flask framework with a SQL database. The
+            web app allows users to search for GitHub repositories related to a
+            given search query. The repository information is obtained using web
+            scraping or via the GitHub API
+          </ul>
+        </div>
+
+        <!-- WORK SECTION -->
+        <div class="sections" id="work">
+          <h1>Work experience</h1>
+          <ul class="list-headings">
+            <li>Student at Stellenbosch University</li>
+            <span class="dates">February 2018 - December 2022 </span>
+            <p>
+              At Stellenbosch University, I gained experience using several
+              coding languages and tools, including Python, Java, C, Haskell,
+              JavaScript, HTML, and CSS. I took courses in object-oriented
+              programming, data structures, and algorithm design, software
+              engineering, web development, database design, data science,
+              artificial intelligence, and software language construction. For
+              my honors project, I developed a research-manager web application
+              tool. The project was Ful Stack. I used the Python Django
+              framework and PostgreSQL as my database of choice.
+            </p>
+
+            <li>
+              Computer Science Teaching Assistant at Stellenbosch University
+            </li>
+
+            <span class="dates"> March 2021 - November 2022 </span>
+            <p>
+              I assisted first-year students in learning the Java programming
+              language and object-oriented programming concepts. I was also
+              responsible for marking first-year projects and invigilating
+              exams.
+            </p>
+
+            <li>Sales Assistant at Tenga Tenga Pvt Ltd</li>
+            <span class="dates"> December 2019 - January 2020</span>
+            <p>
+              During my time at Tenga Tenga, I gained experience in customer
+              service. My responsibilities included processing customer payments
+              at the checkpoint, assisting customers in finding products, and
+              giving shopping recommendations.
+            </p>
+          </ul>
+        </div>
+
+        <!-- CONTACT SECTION -->
+        <div class="sections" id="contact">
+          <h1>Contact</h1>
+          <p>Feel free to email me if you have any request or questions.</p>
+          <button>
+            <a
+              id="email-link"
+              href="mailto:chikoworeshamiso@gmail.com"
+              rel="noopener noreferrer"
+              target="_blank"
+              >Email me</a
+            >
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="{{url_for('static',filename = 'js/index.js')}}"></script>
+  </body>
+</html>
